@@ -1,0 +1,177 @@
+<h1 class="title">My Skills</h1>
+
+<!--SKILLS CSS START-->
+<style>
+  .SKILLS{
+      margin: 3rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #3F0071;
+      width: 85%;
+      padding: 3rem;
+      border-radius: 1rem;
+      box-shadow: #150050 0 0 2rem;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    .skills{
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .skill-name{
+      font-size: 18px;
+      font-weight: 700;
+      color: #f1f1f1;
+      text-transform: uppercase;
+      margin: 1.5rem 0;
+    }
+
+    .skill-bar{
+      height: 14px;
+      background: #150050;
+      border-radius: 3px;
+    }
+
+    .skill-per{
+      height: 14px;
+      background: #a603fc;
+      border-radius: 3px;
+      position: relative;
+      animation: fillBars 2.5s 1;
+    }
+
+    .skill-per::before{
+      content: attr(per);
+      color: #1b1b1b;
+      position: absolute;
+      padding: 4px 6px;
+      background: #f1f1f1;
+      border-radius: 4px;
+      font-size: 12px;
+      top: -35px;
+      right: 0;
+      transform: translateX(50%);
+    }
+
+    .skill-per::after{
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #f1f1f1;
+      top: -15px;
+      right: 0;
+      transform: translateX(50%) rotate(45deg);
+      border-radius: 2px;
+    }
+
+    @keyframes fillBars{
+      from{
+        width: 0;
+      }
+      to{
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 500px)
+    {
+        .container 
+        {
+            max-width: 95%;
+        }
+        .SKILLS 
+        {
+          width: 95%;
+          padding: 3rem 0.5rem 3rem 0.5rem;
+        }
+    }
+</style>
+<!--SKILLS CSS END-->
+
+<section class="SKILLS">
+
+  <div class="skills">
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="95%" style="max-width:95%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Django</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="90%" style="max-width:90%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Flask</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="85%" style="max-width:85%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">SQL</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="90%" style="max-width:90%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Cyber Security</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="80%" style="max-width:80%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="90%" style="max-width:90%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="85%" style="max-width:85%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Bootstrap</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="80%" style="max-width:80%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">C</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="80%" style="max-width:80%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Javascript</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="75%" style="max-width:75%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Jquery</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="70%" style="max-width:70%"></div>
+      </div>
+    </div>
+
+  </div>
+
+</section>

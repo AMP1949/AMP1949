@@ -1,0 +1,79 @@
+body {
+    background-color: #000000;
+}
+
+.container {
+    background-color: #610094;
+    color: #efefef;
+    margin: 4rem auto;
+    width: 65rem;
+    text-align: center;
+    padding: 2.5rem 0 2.5rem 0;
+    border-radius: 2rem;
+    box-shadow: #4d4ca9 0 0 5rem;
+}
+.title {
+    background-color: #3F0071;
+    padding: 1rem;
+    width: 50%;
+    display: inline-block;
+    border-radius: 1rem;
+    box-shadow: #150050 0 0 2rem;
+}
+.pages {
+    position: sticky;
+    top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pages > button {
+    background-color: #3F0071;
+    padding: 1rem;
+    width: 15%;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: #efefef;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+    font-size: larger;
+}
+.active-btn {
+    background-color: #efefef !important;
+    color: #000 !important;
+}
+
+@media (min-width: 576px)
+{
+    .container 
+    {
+        max-width: 95%;
+    }
+    .title
+    {
+        width: 95%;
+    }
+    .pages > button
+    {
+        width: 20%;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .container 
+    {
+        max-width: 95%;
+    }
+    .title
+    {
+        width: 95%;
+    }
+    .pages > button
+    {
+        width: 44%;
+        margin-top: 0.5rem;
+    }
+}

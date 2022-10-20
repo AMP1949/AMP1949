@@ -1,0 +1,63 @@
+<h1 class="title">My Personal Web Page</h1>
+
+<style>
+    .profile {
+            background-color: #3F0071;
+            margin-top: 2.5rem;
+    }
+    img {
+            width: 100%;
+            border-radius: 1rem;
+    }
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    .text > div {
+        background-color: #3F0071;
+        padding: 1rem;
+        width: 33%;
+        border-radius: 1rem;
+        box-shadow: #150050 0 0 2rem;
+        margin: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .text > div:hover {
+        background-color: #efefef;
+        color: #000;
+        transition: 1s;
+    }
+
+    @media (min-width: 576px)
+    {
+        .text > div 
+        {
+            width: 40%;
+        }
+    }
+
+    @media (max-width: 500px)
+    {
+        .text > div 
+        {
+            width: 95%;
+        }
+    }
+
+</style>
+
+<section class="profile title">
+    <img src="img/profile.jpg">
+</section>
+
+<section class="text">
+    <div>First Name : Amirmohammad</div>
+    <div>Last Name : Parchami</div>
+    <div>Country : Iran</div>
+    <div>City : Shiraz</div>
+    <div>Birth : 2006 April 26</div>
+    <div>Age : 16</div>
+</section>
